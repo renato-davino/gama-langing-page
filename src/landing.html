@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Quanto vale seus sonhos?</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content = "Site para compra de sonhos" />
+        <meta name="author" content="Compre seu sonho" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+
+        <div align="center">
+            <h1>BLACK FRIDAY REALIZA - SONHOS A CUSTO ZERO</h1>
+        </div>
+        <br>
+        <div> </div>
+
+        <div align="center">
+            <table>
+                <tr>
+                    <td>
+                        <h2>Todos os dias acordamos com uma quantidade infinita de sonhos. Que tal realizá-los?</h2>
+                    </td>
+                    <td>
+                        <img src="imagens/sonhos.jpg" alt="Logo sonhos" width="200" height="150" title="Logo sonhos" />
+                    </td>
+
+                </tr>        
+            </table>
+            <br>
+        </div>
+
+    </head>
+    <main>
+        <br>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th align="center">
+                        O que acha da viagem dos sonhos?
+                    </th>
+                    <th align="center">
+                        O que acha do carro dos sonhos?
+                    </th>
+                    <th align="center">
+                        Que tal o lugar que sempre sonhou morar?
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <td align="center">
+                    <img src="imagens/Maldivas.jpg" alt="Imagem Maldivas" width="400" height="300"  title="Imagem Maldivas" />
+                </td>
+                <td align="center">
+                    <img src="imagens/ferrari-458.jpg" alt="Imagem Ferrari" width="400" height="300"  title="Imagem Ferrari" />
+                </td>
+                <td align="center">
+                    <img src="imagens/mansão.jpg" alt="Imagem Mansão" width="400" height="300"  title="Imagem Mansão" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 align="center">Ilhas Maldivas: De R$ 50.000,00</h3>
+                    <h3 align="center">Por apenas: 1 ANO DE VIDA </h3>
+                </td>
+                <td>
+                    <h3 align="center">Ferrari 458: De R$ 3.000.000,00</h3>
+                    <h3 align="center">Por apenas: 20 ANO DE VIDA </h3>
+                </td>
+                <td>
+                    <h3 align="center">Mansão dos sonhos: De R$ 20.000.000,00</h3>
+                    <h3 align="center">Por apenas: 45 ANO DE VIDA </h3>
+                </td>
+            </tr>
+        </table>
+        <br><br><br><br>
+        <h4 align="center">Gostou das ofertas? Caso queira realizar seus sonhos a custo ZERO,
+            perdendo apenas um pouquinho de tempo, essa é a oportunidade.
+            Cadastre seu e-mail.<br><br>
+            <form id="form">  
+                <input type="text" name="email" placeholder="digite seu e-mail" id="email" />
+                <input type="submit" name="btnEnviar" value="Enviar"> 
+            </form>
+        </h4>
+        <script>
+            const form = document.getElementById('form');
+
+            form.addEventListener('submit', (e) => {e.preventDefault();
+            let email = document.getElementById('email').value;
+            let emailRecebido = JSON.stringify(email);
+
+            localStorage.setItem('Email: ', emailRecebido);
+            })
+        </script>
+    </main>
+    <footer>
+    </footer>
+</html>
